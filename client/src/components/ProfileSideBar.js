@@ -21,7 +21,7 @@ export default function ProfileSidebar(props) {
         <List>
           <ListItem disablePadding>
           <Tooltip title="Edit Profile" placement="top-end">
-            <Link to="/profile">
+            <Link to="/profile" state={{data: props.data}}>
           <Avatar alt="" src={require("../static/images/avatar1.png")} sx={{ width: 150, height: 150 }} />
           </Link>
           </Tooltip>
